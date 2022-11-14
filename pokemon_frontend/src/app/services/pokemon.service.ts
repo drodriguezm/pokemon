@@ -13,11 +13,6 @@ export class PokemonService {
 
   constructor(private http: HttpClient) { }
 
-  searchPokemon(nombre: string): Observable<Pokemon[]>{
-    const url = `${this.apiUrl}/pokemon/${nombre}`;
-    return this.http.get<Pokemon[]>(url);
-  }
-
   getPokemonById(index: number){
      const url = `${this.apiUrl}/pokemon/${index}`;
      return this.http.get<Pokemon[]>(url);
