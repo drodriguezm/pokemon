@@ -24,7 +24,7 @@ export class ListPokemonsComponent implements OnInit {
 
   //
   // dataSource = ELEMENT_DATA;
-  columnsToDisplay : string[] = ['position', 'name', 'expanded'];
+  columnsToDisplay : string[] = ['position', 'name', 'expandir'];
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
   expandedElement!: ElementData | null;
   //
